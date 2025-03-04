@@ -61,7 +61,7 @@ function mergeObjects(objects) {
  *
  */
 function removeProperties(obj, keys) {
-  const newObj = structuredClone(obj);
+  const newObj = obj;
   keys.forEach((key) => {
     delete newObj[key];
   });
